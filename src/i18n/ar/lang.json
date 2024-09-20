@@ -1,0 +1,162 @@
+{
+    "welcome_message": "تم الحصول على رسالة الترحيب بنجاح.",
+    "error_message": "حدث خطأ أثناء معالجة الطلب.",
+    "mail_sent": "إرسال البريد بنجاح.",
+    "file_upload": "تم تحميل الملف بنجاح.",
+    "file_delete": "تم حذف الملف بنجاح.",
+    "date_checking": "تعمل وظيفة تاريخ الأمر بنجاح.",
+    "user": {
+        "list": "يتم الحصول على قائمة المستخدمين بنجاح."
+    },
+    "setting": {
+        "list": "يتم الحصول على قائمة الإعداد بنجاح.",
+        "create": "تم إنشاء الإعداد بنجاح.",
+        "update": "تم تحديث الإعداد بنجاح.",
+        "single": "يتم الإعداد بنجاح.",
+        "delete": "تم حذف الإعداد بنجاح."
+    },
+    "auth": {
+        "tanant": {
+            "register": "تم تسجيل المستخدم الرئيسي بنجاح.",
+            "login": "تم تسجيل دخول المستخدم الرئيسي بنجاح.",
+            "not_found": "لم يتم العثور على تانانت.",
+            "exist": "المستخدم الرئيسي موجود بالفعل."
+        },
+        "register": "تم تسجيل المستخدم بنجاح.",
+        "unregister_failed": "فشل تسجيل المستخدم.",
+        "login": "قام المستخدم بتسجيل الدخول بنجاح.",
+        "login_credential_faild": "تسجيل الدخول وكلمة المرور غير صالحة.",
+        "forget_password": "تم إرسال بريد إعادة تعيين كلمة المرور بنجاح.",
+        "email_not_found": "لم يتم العثور على عنوان البريد الإلكتروني.",
+        "reset_password": "تم إعادة تعيين كلمة المرور بنجاح.",
+        "reset_password_fail": "فشلت إعادة تعيين كلمة المرور. يرجى المحاولة مرة أخرى لاحقًا أو الاتصال بالدعم للحصول على المساعدة.",
+        "change_password_success": "لقد تم تغيير كلمة المرور الخاصة بك بنجاح.",
+        "change_password_fail": "فشل في تغيير كلمة المرور. حاول مرة اخرى.",
+        "user_fetch": "الحصول على المستخدم بنجاح.",
+        "company_email_exist": "البريد الإلكتروني للشركة موجود بالفعل.",
+        "not_found": "لم يتم العثور على المستخدم. الرمز المميز انتهت صلاحيته.",
+        "new_user_register": "تمت إضافة مستخدم جديد بنجاح.",
+        "email_verified": "تم التحقق من البريد الإلكتروني بنجاح.",
+        "email_not_verified": "يرجى التحقق من البريد الإلكتروني الخاص بك لتسجيل الدخول بنجاح.",
+        "phone_no_verified": "تم التحقق من رقم الهاتف بنجاح.",
+        "phone_not_verified": "يرجى التحقق من رقم هاتفك لتسجيل الدخول بنجاح.",
+        "password_added": "تمت إضافة كلمة مرور المستخدم بنجاح.",
+        "invalid_otp": "فشل إرسال كلمة المرور لمرة واحدة (OTP). حاول مرة اخرى.",
+        "invalid_password": "رمز مرور خاطئ.",
+        "user_exists": "المستخدم موجود بالفعل مع البريد الإلكتروني أو رقم الهاتف المحدد.",
+        "user_not_found": "لم يتم العثور على المستخدم بالبريد الإلكتروني أو رقم الهاتف.",
+        "profile_updated": "تم تحديث ملف تعريف المستخدم بنجاح.",
+        "generated_otp": "تم إنشاء OTP بنجاح.",
+        "otp_verified": "تم التحقق من Otp بنجاح.",
+        "email_verification_failed": "فشل التحقق من البريد الإلكتروني.",
+        "phone_verification_failed": "فشل التحقق من الهاتف.",
+        "verification_failed": "فشل التحقق من البريد الإلكتروني والهاتف. حاول مرة اخرى.",
+        "login_success": "تم التحقق من تسجيل دخول المستخدم بواسطة OTP بنجاح.",
+        "invalid_old_password": "كلمة المرور القديمة غير صالحة.",
+        "signout_success": "لقد تم تسجيل خروجك بنجاح.",
+        "signout_found": "فشل تسجيل دخول المستخدم.",
+        "un_register": "تم إلغاء تسجيل المستخدم بنجاح.",
+        "user_found": "تم العثور على المستخدم بنجاح.",
+        "no_user": "لم يتم العثور على المستخدم بالمعرف المحدد.",
+        "invalid_email": "بريد إلكتروني خاطئ.",
+        "invalid_phone": "هاتف غير صالح.",
+        "invalid_user": "مستخدم غير صالح.",
+        "user_already_registered": "المستخدم مسجل بالفعل.",
+        "verify_email_otp": "يرجى التحقق من عنوان البريد الإلكتروني الخاص بك.",
+        "verify_mobile_otp": "يرجى التحقق من عنوان رقم هاتفك."
+    },
+    "gold_loan": {
+        "tag_update": "تم تحديث تكوين العلامة بنجاح.",
+        "tag_retrieve_success": "تم استرداد العلامات بنجاح.",
+        "config_success": "تم تحديث تكوين المسؤول بنجاح.",
+        "loan_config_success": "تم استرداد تكوين المشرف بنجاح.",
+        "loan_calculation_success": "تم حساب سعر الذهب الخاص بك بنجاح.",
+        "valuation_added_succes": "تم حفظ تقييم سعر الذهب الخاص بك بنجاح.",
+        "valuation_added_failed": "فشلت عملية تقييم الذهب الخاص بك.",
+        "valuation_not_found": "لم يتم العثور على تقييمات للمستخدم.",
+        "valuation_deleted": "تم حذف تقييم المستخدم بنجاح.",
+        "user_valuations": "تم استرداد تفاصيل تقييم المستخدم بنجاح.",
+        "egp": "جنيه مصري",
+        "months": "شهور"
+    },
+    "kyc": {
+        "kyc_success": "تم تحديث تفاصيل KYC بنجاح.",
+        "kyc_failed": "فشلت عملية KYC.",
+        "user_kyc": "تم استرداد تفاصيل KYC الخاصة بالمستخدم بنجاح."
+    },
+    "store": {
+        "register": "تم تسجيل المتجر بنجاح.",
+        "register_fail": "فشل تسجيل المتجر.",
+        "store_exists": "المتجر موجود بالفعل.",
+        "store_locations": "تم إدراج موقع المتجر بنجاح.",
+        "not_found": "لم يتم العثور على المتجر.",
+        "store_holiday_register_success": "تمت إضافة العطلة بنجاح.",
+        "store_holiday_retrieve_success": "تم استرداد الإجازات بنجاح.",
+        "store_holiday_update_success": "تم تحديث العطلة بنجاح.",
+        "store_holiday_delete_success": "تم حذف العطلة بنجاح.",
+        "no_holidays_found": "لم يتم العثور على أيام العطل.",
+        "delete": "تم حذف المتجر.",
+        "delete_fail": "فشل حذف المتجر.",
+        "update": "تم تحديث المتجر بنجاح.",
+        "update_fail": "فشل متجر التحديث.",
+        "register_staff_fail":"فشل في إنشاء فريق العمل",
+        "register_store_fail":"فشل في إنشاء المتجر"
+    },
+    "appointment": {
+        "appointment_book_success": "تم حجز الموعد بنجاح.",
+        "appointment_retrieve_success": "تم استرداد الموعد بنجاح.",
+        "get_days": "تم استرداد اليوم بنجاح.",
+        "day_slots": "تم استرداد فتحات اليوم بنجاح.",
+        "slot_delete": "تم حذف الفترة الزمنية بنجاح."
+    },
+    "days": {
+        "monday": "الاثنين",
+        "tuesday": "يوم الثلاثاء",
+        "wednesday": "الأربعاء",
+        "thursday": "يوم الخميس",
+        "friday": "جمعة",
+        "saturday": "السبت",
+        "sunday": "الأحد"
+    },
+    "months": {
+        "january": "يناير",
+        "february": "شهر فبراير",
+        "march": "يمشي",
+        "april": "أبريل",
+        "may": "يمكن",
+        "june": "يونيو",
+        "july": "يوليو",
+        "august": "أغسطس",
+        "september": "سبتمبر",
+        "october": "اكتوبر",
+        "november": "شهر نوفمبر",
+        "december": "ديسمبر"
+    },
+    "global_config": {
+        "config_success": "تم تحديث التكوين العام بنجاح.",
+        "config_retrieve_success": "تم استرداد التكوين العام بنجاح."
+    },
+    "contact_us": {
+        "new_support_request": "تم إرسال رسالة الدعم الخاصة بك بنجاح",
+        "set_support_details": "تم تعيين تفاصيل الدعم الخاصة بك بنجاح",
+        "get_contact_details": "تم الحصول على تفاصيل الاتصال الخاصة بك بنجاح",
+        "delete_contact_details": "تم حذف تفاصيل الاتصال الخاصة بك بنجاح",
+        "update_contact_details": "تم تحديث تفاصيل الاتصال الخاصة بك بنجاح"
+    },
+    "loan":{
+        "loan_apply": "Loan applied successfully.",
+        "loan_status_updated": "Loan status updated successfully.",
+        "loan_details_retrieve": "Loan details retrieved successfully."
+    },
+    "notification":{
+        "push_notification_enable_sucess":"تم تمكين/تعطيل إشعار الدفع بنجاح.",
+        "push_notification_enable_fail":"فشل تمكين/تعطيل إعلام الدفع."
+    },
+    "cms":{
+        "register":"تمت إضافة تفاصيل Cms بنجاح.",
+        "get_cms_details":"احصل على تفاصيل Cms بنجاح.",
+        "page_type_not_found":"لم يتم العثور على نوع الصفحة.",
+        "update_contact_details":"تم تحديث cms بنجاح.",
+        "delete_success":"تم حذف cms بنجاح."
+    }
+}

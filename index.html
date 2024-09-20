@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSocket Client</title>
+  <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #notifications {
+      margin-top: 20px;
+    }
+    .notification {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <h1>WebSocket Client</h1>
+  
+  <div>
+    <button id="connectBtn">Connect</button>
+    <button id="bookAppointmentBtn">Book Appointment</button>
+    <button id="updateGoldRateBtn">Update Gold Rate</button>
+  </div>
+  
+  <div id="notifications"></div>
+
+  <script>
+    var token = prompt('Enter your token:');
+   
+    const socket = io('http://localhost:3005', {
+      extraHeaders: {
+        "Authorization": token
+      }
+    }); // Update this URL as needed
+
+    // Handle connection
+    document.getElementById('connectBtn').addEventListener('click', () => {
+      socket.emit('Connect');
+    });
+
+    // Handle booking appointment
+    document.getElementById('bookAppointmentBtn').addEventListener('click', () => {
+      const appointment = {
+        store_id: '66cd88aa184487d6aef67fb0',
+        customerId: 'customer456',
+        appointmentDetails: {
+          date: '2024-08-14',
+          time: '10:00 AM',
+        },
+      };
+      socket.emit('bookAppointment', appointment);
+    });
+
+    // Handle gold rate update
+    document.getElementById('updateGoldRateBtn').addEventListener('click', () => {
+      const goldRate = { rate: 1800 };
+      socket.emit('goldRate', goldRate);
+    });
+
+    // Listen for notifications
+    socket.on('notification', (data) => {
+      const notifications = document.getElementById('notifications');
+      const notification = document.createElement('div');
+      notification.className = 'notification';
+      notification.textContent = `${data.message}: ${JSON.stringify(data.data)}`;
+      notifications.appendChild(notification);
+    });
+
+    // Listen for configuration updates
+    socket.on('configUpdate', (data) => {
+      const notifications = document.getElementById('notifications');
+      const notification = document.createElement('div');
+      notification.className = 'notification';
+      notification.textContent = `${data.message}: ${JSON.stringify(data.data)}`;
+      notifications.appendChild(notification);
+    });
+
+    // Handle disconnection
+    socket.on('disconnect', () => {
+      console.log('Disconnected from the server');
+    });
+  </script>
+</body>
+</html>
